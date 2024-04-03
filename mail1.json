@@ -1,0 +1,457 @@
+{
+    "Ethernet II": {
+        "fields": {
+            "Destination": {
+                "hex_values": [
+                    "0xa0",
+                    "0x36",
+                    "0x9f",
+                    "0x31",
+                    "0xa7",
+                    "0x2e"
+                ]
+            },
+            "Source": {
+                "hex_values": [
+                    "0x00",
+                    "0xa0",
+                    "0x45",
+                    "0xd5",
+                    "0x37",
+                    "0xca"
+                ]
+            },
+            "Type": {
+                "hex_values": [
+                    "0x08",
+                    "0x00"
+                ]
+            }
+        }
+    },
+    "Internet Protocol": {
+        "fields": {
+            "Version + Header Length": {
+                "hex_values": [
+                    "0x45"
+                ]
+            },
+            "Differentiated Services Field": {
+                "hex_values": [
+                    "0x00"
+                ]
+            },
+            "Total Length": {
+                "hex_values": [
+                    "0x00",
+                    "0x00"
+                ]
+            },
+            "Identification": {
+                "hex_values": [
+                    "0x17",
+                    "0x5b"
+                ]
+            },
+            "Flags + Fragment Offset": {
+                "hex_values": [
+                    "0x40"
+                ]
+            },
+            "Fragment Offset": {
+                "hex_values": [
+                    "0x00"
+                ]
+            },
+            "Time to Live": {
+                "hex_values": [
+                    "0x40"
+                ]
+            },
+            "Protocol": {
+                "hex_values": [
+                    "0x11"
+                ]
+            },
+            "Header Checksum": {
+                "hex_values": [
+                    "0x00",
+                    "0x00"
+                ]
+            },
+            "Source Address": {
+                "hex_values": [
+                    "0xc0",
+                    "0xa8",
+                    "0x00",
+                    "0x32"
+                ]
+            },
+            "Destination Address": {
+                "hex_values": [
+                    "0xc0",
+                    "0xa8",
+                    "0x00",
+                    "0x19"
+                ]
+            }
+        }
+    },
+    "User Datagram Protocol": {
+        "fields": {
+            "Source Port": {
+                "hex_values": [
+                    "0xeb",
+                    "0xb0"
+                ]
+            },
+            "Destination Port": {
+                "hex_values": [
+                    "0xc0",
+                    "0x15"
+                ]
+            },
+            "Length": {
+                "hex_values": [
+                    "0x00",
+                    "0x00"
+                ]
+            },
+            "Checksum": {
+                "hex_values": [
+                    "0x00",
+                    "0x00"
+                ]
+            }
+        }
+    },
+    "Distributed Computing Environment / Remote Procedure Call": {
+        "fields": {
+            "Version": {
+                "hex_values": [
+                    "0x04"
+                ]
+            },
+            "Packet Type": {
+                "hex_values": [
+                    "0x02"
+                ]
+            },
+            "Flags 1": {
+                "hex_values": [
+                    "0x20"
+                ]
+            },
+            "Flags 2": {
+                "hex_values": [
+                    "0x00"
+                ]
+            },
+            "Data Representation": {
+                "hex_values": [
+                    "0x00",
+                    "0x00",
+                    "0x00"
+                ]
+            },
+            "Serial High": {
+                "hex_values": [
+                    "0x00"
+                ]
+            },
+            "Object UUID": {
+                "hex_values": [
+                    "0xde",
+                    "0xa0",
+                    "0x00",
+                    "0x00",
+                    "0x6c",
+                    "0x97",
+                    "0x11",
+                    "0xd1",
+                    "0x82",
+                    "0x71",
+                    "0x00",
+                    "0x01",
+                    "0x00",
+                    "0x01",
+                    "0x01",
+                    "0x74"
+                ]
+            },
+            "Interface UUID": {
+                "hex_values": [
+                    "0xde",
+                    "0xa0",
+                    "0x00",
+                    "0x01",
+                    "0x6c",
+                    "0x97",
+                    "0x11",
+                    "0xd1",
+                    "0x82",
+                    "0x71",
+                    "0x00",
+                    "0xa0",
+                    "0x24",
+                    "0x42",
+                    "0xdf",
+                    "0x7d"
+                ]
+            },
+            "Activity UUID": {
+                "hex_values": [
+                    "0xfa",
+                    "0x60",
+                    "0x15",
+                    "0x15",
+                    "0x32",
+                    "0x29",
+                    "0x46",
+                    "0xf3",
+                    "0xb6",
+                    "0xe0",
+                    "0xa6",
+                    "0x38",
+                    "0x0a",
+                    "0x58",
+                    "0x38",
+                    "0x07"
+                ]
+            },
+            "Server Boot Time": {
+                "hex_values": [
+                    "0x5d",
+                    "0x61",
+                    "0x78",
+                    "0x39"
+                ]
+            },
+            "Interface Version": {
+                "hex_values": [
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x01"
+                ]
+            },
+            "Sequence Number": {
+                "hex_values": [
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x06"
+                ]
+            },
+            "Opnum": {
+                "hex_values": [
+                    "0x00",
+                    "0x02"
+                ]
+            },
+            "Interface Hint": {
+                "hex_values": [
+                    "0xff",
+                    "0xff"
+                ]
+            },
+            "Activity Hint": {
+                "hex_values": [
+                    "0xff",
+                    "0xff"
+                ]
+            },
+            "Fragment Length": {
+                "hex_values": [
+                    "0x00",
+                    "0x00"
+                ]
+            },
+            "Fragment Number": {
+                "hex_values": [
+                    "0x00",
+                    "0x00"
+                ]
+            },
+            "Auth Protocol": {
+                "hex_values": [
+                    "0x00"
+                ]
+            },
+            "Serial Low": {
+                "hex_values": [
+                    "0x00"
+                ]
+            }
+        }
+    },
+    "Profinet IO": {
+        "fields": {
+            "Status": {
+                "hex_values": [
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x00"
+                ]
+            },
+            "ArgsLength": {
+                "hex_values": [
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x68"
+                ]
+            },
+            "Array: Max, Offset, Size": {
+                "hex_values": [
+                    "0x00",
+                    "0x01",
+                    "0x03",
+                    "0x6c",
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x00",
+                    "0x68"
+                ]
+            },
+            "IODReadResHeader": {
+                "fields": {
+                    "BlockType": {
+                        "hex_values": [
+                            "0x80",
+                            "0x09"
+                        ]
+                    },
+                    "BlockLength": {
+                        "hex_values": [
+                            "0x00",
+                            "0x3c"
+                        ]
+                    },
+                    "BlockVersionHigh": {
+                        "hex_values": [
+                            "0x01"
+                        ]
+                    },
+                    "BlockVersionLow": {
+                        "hex_values": [
+                            "0x00"
+                        ]
+                    },
+                    "SeqNumber": {
+                        "hex_values": [
+                            "0x00",
+                            "0x04"
+                        ]
+                    },
+                    "ARUUID": {
+                        "hex_values": [
+                            "0xe3",
+                            "0xf0",
+                            "0x22",
+                            "0xb4",
+                            "0x5a",
+                            "0xcc",
+                            "0x41",
+                            "0xa1",
+                            "0xbe",
+                            "0x98",
+                            "0x40",
+                            "0xe3",
+                            "0x00",
+                            "0xb9",
+                            "0xc0",
+                            "0x71"
+                        ]
+                    },
+                    "API": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00"
+                        ]
+                    },
+                    "SlotNumber": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00"
+                        ]
+                    },
+                    "SubslotNumber": {
+                        "hex_values": [
+                            "0x80",
+                            "0x00"
+                        ]
+                    },
+                    "Padding": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00"
+                        ]
+                    },
+                    "Index": {
+                        "hex_values": [
+                            "0xc0",
+                            "0x01"
+                        ]
+                    },
+                    "RecordDataLength": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x28"
+                        ]
+                    },
+                    "AdditionalValue1": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00"
+                        ]
+                    },
+                    "AdditionalValue2": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00"
+                        ]
+                    },
+                    "Another Padding": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00"
+                        ]
+                    }
+                }
+            },
+            "abd": {
+                "hex_values": [
+                    "0x99"
+                ]
+            }
+        }
+    }
+}
