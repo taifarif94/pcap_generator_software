@@ -50,7 +50,7 @@
             "Total Length": {
                 "hex_values": [
                     "0x00",
-                    "0x00"
+                    "0xda"
                 ],
                 "selected": 0
             },
@@ -63,12 +63,7 @@
             },
             "Flags + Fragment Offset": {
                 "hex_values": [
-                    "0x40"
-                ],
-                "selected": 0
-            },
-            "Fragment Offset": {
-                "hex_values": [
+                    "0x40",
                     "0x00"
                 ],
                 "selected": 0
@@ -87,8 +82,8 @@
             },
             "Header Checksum": {
                 "hex_values": [
-                    "0x00",
-                    "0x00"
+                    "0xa1",
+                    "0x1c"
                 ],
                 "selected": 0
             },
@@ -132,14 +127,14 @@
             "Length": {
                 "hex_values": [
                     "0x00",
-                    "0x00"
+                    "0xc6"
                 ],
                 "selected": 0
             },
             "Checksum": {
                 "hex_values": [
-                    "0x00",
-                    "0x00"
+                    "0xbc",
+                    "0x69"
                 ],
                 "selected": 0
             }
@@ -300,7 +295,7 @@
             "Fragment Length": {
                 "hex_values": [
                     "0x00",
-                    "0x00"
+                    "0x6e"
                 ],
                 "selected": 0
             },
@@ -342,24 +337,34 @@
                     "0x00",
                     "0x00",
                     "0x00",
-                    "0x68"
+                    "0x5a"
                 ],
                 "selected": 0
             },
-            "Array: Max, Offset, Size": {
+            "MaximumCount": {
                 "hex_values": [
                     "0x00",
                     "0x01",
                     "0x03",
-                    "0x6c",
+                    "0x6c"
+                ],
+                "selected": 0
+            },
+            "Offset": {
+                "hex_values": [
                     "0x00",
                     "0x00",
                     "0x00",
+                    "0x54"
+                ],
+                "selected": 0
+            },
+            "ActualCount": {
+                "hex_values": [
                     "0x00",
                     "0x00",
                     "0x00",
-                    "0x00",
-                    "0x68"
+                    "0x5a"
                 ],
                 "selected": 0
             },
@@ -377,12 +382,7 @@
                             "0x00",
                             "0x3c"
                         ],
-                        "selected": 1
-                    },
-                    "ABCD": {
-                        "hex_values": [
-                            "0x99"
-                        ]
+                        "selected": 0
                     },
                     "BlockVersionHigh": {
                         "hex_values": [
@@ -466,7 +466,7 @@
                             "0x00",
                             "0x00",
                             "0x00",
-                            "0x28"
+                            "0x14"
                         ],
                         "selected": 0
                     },
@@ -505,6 +505,107 @@
                             "0x00",
                             "0x00",
                             "0x00",
+                            "0x00"
+                        ],
+                        "selected": 0
+                    }
+                },
+                "selected": 0
+            },
+            "AdjustDomainBoundary": {
+                "fields": {
+                    "BlockType": {
+                        "hex_values": [
+                            "0x02",
+                            "0x09"
+                        ],
+                        "selected": 0
+                    },
+                    "BlockLength": {
+                        "hex_values": [
+                            "0x00",
+                            "0x10"
+                        ],
+                        "selected": 0
+                    },
+                    "BlockVersionHigh": {
+                        "hex_values": [
+                            "0x01"
+                        ],
+                        "selected": 0
+                    },
+                    "BlockVersionLow": {
+                        "hex_values": [
+                            "0x01"
+                        ],
+                        "selected": 0
+                    },
+                    "Padding": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00"
+                        ],
+                        "selected": 0
+                    },
+                    "DomainBoundaryIngress": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00"
+                        ],
+                        "selected": 0
+                    },
+                    "DomainBoundaryEgress": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00",
+                            "0x00",
+                            "0x00"
+                        ],
+                        "selected": 0
+                    },
+                    "AdjustProperties": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00"
+                        ],
+                        "selected": 0
+                    },
+                    "Padding2": {
+                        "hex_values": [
+                            "0x00",
+                            "0x00"
+                        ],
+                        "selected": 0
+                    }
+                },
+                "selected": 0
+            },
+            "Block1": {
+                "fields": {
+                    "Type": {
+                        "hex_values": [
+                            "0x01",
+                            "0x02"
+                        ],
+                        "selected": 0
+                    },
+                    "BlockLength": {
+                        "hex_values": [
+                            "0x00",
+                            "0x02"
+                        ],
+                        "selected": 1
+                    },
+                    "Version High": {
+                        "hex_values": [
+                            "0x01"
+                        ],
+                        "selected": 0
+                    },
+                    "Version Low": {
+                        "hex_values": [
                             "0x00"
                         ],
                         "selected": 0

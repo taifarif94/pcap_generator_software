@@ -1,6 +1,11 @@
 {
     "Ethernet II": {
         "fields": {
+            "abcd": {
+                "hex_values": [
+                    "0x12"
+                ]
+            },
             "Destination": {
                 "hex_values": [
                     "0xa0",
@@ -9,8 +14,7 @@
                     "0x31",
                     "0xa7",
                     "0x2e"
-                ],
-                "selected": 0
+                ]
             },
             "Source": {
                 "hex_values": [
@@ -20,77 +24,65 @@
                     "0xd5",
                     "0x37",
                     "0xca"
-                ],
-                "selected": 0
+                ]
             },
             "Type": {
                 "hex_values": [
                     "0x08",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             }
-        },
-        "selected": 0
+        }
     },
     "Internet Protocol": {
         "fields": {
             "Version + Header Length": {
                 "hex_values": [
                     "0x45"
-                ],
-                "selected": 0
+                ]
             },
             "Differentiated Services Field": {
                 "hex_values": [
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Total Length": {
                 "hex_values": [
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Identification": {
                 "hex_values": [
                     "0x17",
                     "0x5b"
-                ],
-                "selected": 0
+                ]
             },
             "Flags + Fragment Offset": {
                 "hex_values": [
                     "0x40"
-                ],
-                "selected": 0
+                ]
             },
             "Fragment Offset": {
                 "hex_values": [
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Time to Live": {
                 "hex_values": [
                     "0x40"
-                ],
-                "selected": 0
+                ]
             },
             "Protocol": {
                 "hex_values": [
                     "0x11"
-                ],
-                "selected": 0
+                ]
             },
             "Header Checksum": {
                 "hex_values": [
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Source Address": {
                 "hex_values": [
@@ -98,8 +90,7 @@
                     "0xa8",
                     "0x00",
                     "0x32"
-                ],
-                "selected": 0
+                ]
             },
             "Destination Address": {
                 "hex_values": [
@@ -107,11 +98,9 @@
                     "0xa8",
                     "0x00",
                     "0x19"
-                ],
-                "selected": 0
+                ]
             }
-        },
-        "selected": 0
+        }
     },
     "User Datagram Protocol": {
         "fields": {
@@ -119,72 +108,61 @@
                 "hex_values": [
                     "0xeb",
                     "0xb0"
-                ],
-                "selected": 0
+                ]
             },
             "Destination Port": {
                 "hex_values": [
                     "0xc0",
                     "0x15"
-                ],
-                "selected": 0
+                ]
             },
             "Length": {
                 "hex_values": [
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Checksum": {
                 "hex_values": [
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             }
-        },
-        "selected": 0
+        }
     },
     "Distributed Computing Environment / Remote Procedure Call": {
         "fields": {
             "Version": {
                 "hex_values": [
                     "0x04"
-                ],
-                "selected": 0
+                ]
             },
             "Packet Type": {
                 "hex_values": [
                     "0x02"
-                ],
-                "selected": 0
+                ]
             },
             "Flags 1": {
                 "hex_values": [
                     "0x20"
-                ],
-                "selected": 0
+                ]
             },
             "Flags 2": {
                 "hex_values": [
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Data Representation": {
                 "hex_values": [
                     "0x00",
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Serial High": {
                 "hex_values": [
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Object UUID": {
                 "hex_values": [
@@ -204,8 +182,7 @@
                     "0x01",
                     "0x01",
                     "0x74"
-                ],
-                "selected": 0
+                ]
             },
             "Interface UUID": {
                 "hex_values": [
@@ -225,8 +202,7 @@
                     "0x42",
                     "0xdf",
                     "0x7d"
-                ],
-                "selected": 0
+                ]
             },
             "Activity UUID": {
                 "hex_values": [
@@ -246,8 +222,7 @@
                     "0x58",
                     "0x38",
                     "0x07"
-                ],
-                "selected": 0
+                ]
             },
             "Server Boot Time": {
                 "hex_values": [
@@ -255,8 +230,7 @@
                     "0x61",
                     "0x78",
                     "0x39"
-                ],
-                "selected": 0
+                ]
             },
             "Interface Version": {
                 "hex_values": [
@@ -264,8 +238,7 @@
                     "0x00",
                     "0x00",
                     "0x01"
-                ],
-                "selected": 0
+                ]
             },
             "Sequence Number": {
                 "hex_values": [
@@ -273,58 +246,49 @@
                     "0x00",
                     "0x00",
                     "0x06"
-                ],
-                "selected": 0
+                ]
             },
             "Opnum": {
                 "hex_values": [
                     "0x00",
                     "0x02"
-                ],
-                "selected": 0
+                ]
             },
             "Interface Hint": {
                 "hex_values": [
                     "0xff",
                     "0xff"
-                ],
-                "selected": 0
+                ]
             },
             "Activity Hint": {
                 "hex_values": [
                     "0xff",
                     "0xff"
-                ],
-                "selected": 0
+                ]
             },
             "Fragment Length": {
                 "hex_values": [
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Fragment Number": {
                 "hex_values": [
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Auth Protocol": {
                 "hex_values": [
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "Serial Low": {
                 "hex_values": [
                     "0x00"
-                ],
-                "selected": 0
+                ]
             }
-        },
-        "selected": 0
+        }
     },
     "Profinet IO": {
         "fields": {
@@ -334,8 +298,7 @@
                     "0x00",
                     "0x00",
                     "0x00"
-                ],
-                "selected": 0
+                ]
             },
             "ArgsLength": {
                 "hex_values": [
@@ -343,8 +306,7 @@
                     "0x00",
                     "0x00",
                     "0x68"
-                ],
-                "selected": 0
+                ]
             },
             "Array: Max, Offset, Size": {
                 "hex_values": [
@@ -360,8 +322,7 @@
                     "0x00",
                     "0x00",
                     "0x68"
-                ],
-                "selected": 0
+                ]
             },
             "IODReadResHeader": {
                 "fields": {
@@ -369,39 +330,29 @@
                         "hex_values": [
                             "0x80",
                             "0x09"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "BlockLength": {
                         "hex_values": [
                             "0x00",
                             "0x3c"
-                        ],
-                        "selected": 1
-                    },
-                    "ABCD": {
-                        "hex_values": [
-                            "0x99"
                         ]
                     },
                     "BlockVersionHigh": {
                         "hex_values": [
                             "0x01"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "BlockVersionLow": {
                         "hex_values": [
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "SeqNumber": {
                         "hex_values": [
                             "0x00",
                             "0x04"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "ARUUID": {
                         "hex_values": [
@@ -421,8 +372,7 @@
                             "0xb9",
                             "0xc0",
                             "0x71"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "API": {
                         "hex_values": [
@@ -430,36 +380,31 @@
                             "0x00",
                             "0x00",
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "SlotNumber": {
                         "hex_values": [
                             "0x00",
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "SubslotNumber": {
                         "hex_values": [
                             "0x80",
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "Padding": {
                         "hex_values": [
                             "0x00",
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "Index": {
                         "hex_values": [
                             "0xc0",
                             "0x01"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "RecordDataLength": {
                         "hex_values": [
@@ -467,22 +412,19 @@
                             "0x00",
                             "0x00",
                             "0x28"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "AdditionalValue1": {
                         "hex_values": [
                             "0x00",
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "AdditionalValue2": {
                         "hex_values": [
                             "0x00",
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     },
                     "Another Padding": {
                         "hex_values": [
@@ -506,13 +448,15 @@
                             "0x00",
                             "0x00",
                             "0x00"
-                        ],
-                        "selected": 0
+                        ]
                     }
-                },
-                "selected": 0
+                }
+            },
+            "JJJJJJJ": {
+                "hex_values": [
+                    "0x99"
+                ]
             }
-        },
-        "selected": 0
+        }
     }
 }
