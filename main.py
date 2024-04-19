@@ -336,7 +336,7 @@ class PcapGenerator(QMainWindow):
         try:
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=4)
-            print(f"Data successfully saved to {filename}")
+            # print(f"Data successfully saved to {filename}")
         except Exception as e:
             print(f"Failed to save data to {filename}: {e}")
 
@@ -384,7 +384,7 @@ class PcapGenerator(QMainWindow):
             file.write(final_data)
 
         # Show a message to the user that the file was generated
-        print(f"File generated: {os.path.abspath(filename)}")
+        # print(f"File generated: {os.path.abspath(filename)}")
 
     def initUI(self):
         # Central Widget
@@ -499,7 +499,7 @@ class PcapGenerator(QMainWindow):
                             self.hex_table.setItem(row, col, item)
                             # Apply blue background if current or any parent level is selected
                             if current_selected:
-                                item.setBackground(QBrush(QColor(0, 0, 255)))  # Blue background
+                                item.setBackground(QBrush(QColor(173, 216, 230)))  # Blue background
                             col += 1
                             if col == 9:  # Skip the gap if next column is 9
                                 col += 1
@@ -590,7 +590,7 @@ class PcapGenerator(QMainWindow):
             # Using 'indent=4' for pretty-printing the output for better readability.
             with open(file_path, 'w') as file:
                 json.dump(self.protocol_structure, file, indent=4)
-            print(f"Structure successfully saved to {file_path}.")
+            # print(f"Structure successfully saved to {file_path}.")
         except IOError as e:
             # Handle potential I/O errors (e.g., permission issues, disk full, etc.)
             print(f"Failed to save the structure to {file_path}. Error: {e}")
@@ -608,7 +608,7 @@ class PcapGenerator(QMainWindow):
                 # Find the path in the protocol structure that corresponds to the selected item.
                 path = self.get_path_from_selection(selected_item)
 
-                self.print_structure_info()
+                # self.print_structure_info()
 
                 # Insert the new field into the protocol structure at the correct location.
                 # Now also including 'selected' set to 0 by default
@@ -626,7 +626,7 @@ class PcapGenerator(QMainWindow):
         while selected_item:
             path.insert(0, selected_item.text(0))  # Assuming the item's text correlates to keys in the structure
             selected_item = selected_item.parent()
-        print(path)
+        # print(path)
         return path
 
     def print_structure_info(self):
@@ -645,12 +645,12 @@ class PcapGenerator(QMainWindow):
                         if 'fields' in value:
                             # Recursively calculate the number of hex entries for sub-blocks
                             sub_block_hex_entries = recurse_structure(value['fields'], depth + 1)
-                            print(f"{indent}{key} - Block, Length: {sub_block_hex_entries}")
+                            # print(f"{indent}{key} - Block, Length: {sub_block_hex_entries}")
                             total_hex_entries += sub_block_hex_entries  # Add sub-block hex entries to total
                         else:
                             # Calculate the number of hex entries for this field
                             hex_entries = len(value.get('hex_values', []))
-                            print(f"{indent}{key} - Field, Length: {hex_entries}")
+                            # print(f"{indent}{key} - Field, Length: {hex_entries}")
                             total_hex_entries += hex_entries  # Add this field's hex entries to total
 
                 return total_hex_entries  # Return the total hex entries of the current block or field
@@ -659,7 +659,7 @@ class PcapGenerator(QMainWindow):
 
         # Start the recursion from the root
         total_entries = recurse_structure(current_level)
-        print(f"Total hex entries in structure: {total_entries}")
+        # print(f"Total hex entries in structure: {total_entries}")
 
     def insert_field_in_structure(self, path, field_name, field_data):
         current_level = self.protocol_structure
@@ -722,7 +722,7 @@ class PcapGenerator(QMainWindow):
                     full_path.append('fields')
                 full_path.append(part)
 
-            print(f"Setting 'selected' for path: {full_path}")
+            # print(f"Setting 'selected' for path: {full_path}")
 
             # Attempt to set 'selected' to 1 using the modified path
             if self.set_selected_in_nested_dict(self.protocol_structure, full_path):
@@ -753,6 +753,7 @@ class PcapGenerator(QMainWindow):
             for field_name, field_data in fields.items():
                 current_path = f"{path} > {field_name}" if path else field_name
                 if 'fields' in field_data:  # This is a nested block
+                    print(field_data)
                     # Recurse into nested fields
                     block_hex_count = update_block_lengths(field_data['fields'], current_path)
                     # Now we check if 'BlockLength' is a direct child of 'fields'
@@ -768,11 +769,26 @@ class PcapGenerator(QMainWindow):
                 elif 'hex_values' in field_data:  # Regular field with hex values
                     total_hex_count += len(field_data['hex_values'])
 
+
             return total_hex_count
 
         for block_name, block_data in self.protocol_structure.items():
             if 'fields' in block_data:
-                update_block_lengths(block_data['fields'], block_name)
+
+                # print(block_name)
+                # print(block_data)
+
+                total_hex_count = update_block_lengths(block_data['fields'], block_name)
+                total_hex_count = max(0, total_hex_count - 4)  # Subtract 4 hex values for the header
+
+                print(block_data.keys())
+
+                if 'BlockLength' in block_data['fields'].keys():
+                    print("Please note update in progress")
+                    print(block_name)
+                    self.protocol_structure[block_name]['fields']['BlockLength']['hex_values'] = [
+                        '0x' + (hex(total_hex_count)[2:].zfill(4))[:2],
+                        '0x' + (hex(total_hex_count)[2:].zfill(4))[2:]]
 
     def count_hex_values_and_update_length(self):
         total_count = 0

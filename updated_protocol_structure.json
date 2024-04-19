@@ -50,7 +50,7 @@
             "Total Length": {
                 "hex_values": [
                     "0x00",
-                    "0x00"
+                    "0xda"
                 ],
                 "selected": 0
             },
@@ -82,8 +82,8 @@
             },
             "Header Checksum": {
                 "hex_values": [
-                    "0x00",
-                    "0x00"
+                    "0xa1",
+                    "0x1c"
                 ],
                 "selected": 0
             },
@@ -127,14 +127,14 @@
             "Length": {
                 "hex_values": [
                     "0x00",
-                    "0x00"
+                    "0xc6"
                 ],
                 "selected": 0
             },
             "Checksum": {
                 "hex_values": [
-                    "0x00",
-                    "0x00"
+                    "0xb4",
+                    "0x59"
                 ],
                 "selected": 0
             }
@@ -295,7 +295,7 @@
             "Fragment Length": {
                 "hex_values": [
                     "0x00",
-                    "0x00"
+                    "0x6e"
                 ],
                 "selected": 0
             },
@@ -337,7 +337,7 @@
                     "0x00",
                     "0x00",
                     "0x00",
-                    "0x00"
+                    "0x5a"
                 ],
                 "selected": 0
             },
@@ -364,7 +364,7 @@
                     "0x00",
                     "0x00",
                     "0x00",
-                    "0x00"
+                    "0x5a"
                 ],
                 "selected": 0
             },
@@ -377,10 +377,41 @@
                         ],
                         "selected": 0
                     },
+                    "NewBlock": {
+                        "fields": {
+                            "Type": {
+                                "hex_values": [
+                                    "0x08",
+                                    "0x09"
+                                ],
+                                "selected": 0
+                            },
+                            "BlockLength": {
+                                "hex_values": [
+                                    "0x00",
+                                    "0x02"
+                                ],
+                                "selected": 0
+                            },
+                            "Version High": {
+                                "hex_values": [
+                                    "0x01"
+                                ],
+                                "selected": 0
+                            },
+                            "Version Low": {
+                                "hex_values": [
+                                    "0x01"
+                                ],
+                                "selected": 0
+                            }
+                        },
+                        "selected": 0
+                    },
                     "BlockLength": {
                         "hex_values": [
                             "0x00",
-                            "0x00"
+                            "0x42"
                         ],
                         "selected": 0
                     },
@@ -524,7 +555,7 @@
                     "BlockLength": {
                         "hex_values": [
                             "0x00",
-                            "0x00"
+                            "0x10"
                         ],
                         "selected": 0
                     },
@@ -582,18 +613,17 @@
                 },
                 "selected": 1
             },
-            "Block1": {
+            "NewMainBlock": {
                 "fields": {
                     "Type": {
                         "hex_values": [
-                            "0x01",
-                            "0x02"
+                            "0x08",
+                            "0x07"
                         ],
                         "selected": 0
                     },
                     "BlockLength": {
                         "hex_values": [
-                            "0x00",
                             "0x00"
                         ],
                         "selected": 0
@@ -606,7 +636,7 @@
                     },
                     "Version Low": {
                         "hex_values": [
-                            "0x00"
+                            "0x01"
                         ],
                         "selected": 0
                     }
